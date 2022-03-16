@@ -1,4 +1,4 @@
-import { useState, useEffect, ChangeEventHandler, FormEventHandler} from "react";
+import { useState, ChangeEventHandler, FormEventHandler} from "react";
 import { getPostCodeInfo } from "../Clients/getTflInfo";
 //import { BusStopInfo } from "./BusStopInfo";
 
@@ -31,7 +31,6 @@ export function PostcodeInfo()
         setPostcode(event.target.value);
     }
 
-
     return (
         <main>
             <h1 id="postcode-title">Postcode</h1>
@@ -43,13 +42,7 @@ export function PostcodeInfo()
 
                 <input type="submit" />
             </form>
+          
         </main>
     )
-} 
-{/* <h2>BusBoard: {postcode}</h2>
-                {
-                longitude !== undefined && latitude !== undefined
-                    ? <BusStopInfo longitude={longitude} latitude={latitude}/>
-                    : <p>Loading info...</p>
-                }
-                 */}
+}
