@@ -4,8 +4,8 @@ import { BusStopInfo } from "./BusStopInfo";
 
 export function PostcodeInfo() 
 {
-    const [longitude, setLongitude] = useState<number>();
-    const [latitude, setLatitude] = useState<number>();
+    const [longitude, setLongitude] = useState();
+    const [latitude, setLatitude] = useState();
     
     let postcode = "W139DE";
     useEffect(
