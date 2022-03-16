@@ -1,8 +1,8 @@
-import React, { useState, useEffect} from "react";
+import { useState, useEffect} from "react";
 import { getBusStopInfo } from "../Clients/getTflInfo";
 
-export function BusStopInfo( {longitude, latitude})
-{
+export const BusStopInfo = (longitude:number, latitude:number) => {
+
     const [nearestBusStops, setNearestBusStops] = useState();
     
     let busStopRadius = 500;
